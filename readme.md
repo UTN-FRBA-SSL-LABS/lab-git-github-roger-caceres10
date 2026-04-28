@@ -344,7 +344,7 @@ git pull
 ```
 
 ```
-PARTE_II_COMPLETA=
+PARTE_II_COMPLETA=SI
 ```
 _(escribí SI cuando el PR del compañero esté aprobado y mergeado)_
 
@@ -413,10 +413,10 @@ Deberías ver el commit `wip: experimento roto` seguido del `Revert "wip: experi
 
 **P1** — ¿Por qué `git revert` es preferible a `git reset --hard` cuando ya hiciste push de los cambios?
 
-> R:
+> R:Porque git reset reescribe el historial, borra commits anteriores y si ya hiciste un push, genera conflictos
 
 ```
-PARTE_III_COMPLETA=
+PARTE_III_COMPLETA=SI
 ```
 _(escribí SI cuando el revert esté pusheado)_
 
@@ -533,10 +533,10 @@ git push
 
 **P2** — Describí con tus palabras qué diferencia hay entre las dos implementaciones de `esPar` que conflictuaban. ¿En qué caso podría importar elegir una sobre la otra?
 
-> R:
+> R:Las dos implementaciones hacen lo mismo, pero una usa módulo y la otra usa una operación bit a bit. La versión con % es más clara y la versión con & es más eficiente. Solo en código de bajo nivel o muy optimizado podría importar cuál se elige.
 
 ```
-PARTE_IV_COMPLETA=
+PARTE_IV_COMPLETA=SI
 ```
 _(escribí SI cuando el conflicto esté resuelto y pusheado)_
 
@@ -546,15 +546,15 @@ _(escribí SI cuando el conflicto esté resuelto y pusheado)_
 
 **P3** — Un compañero te dice: "yo hago un solo commit al final del día con todo lo que hice". ¿Qué problemas puede traer esa práctica? ¿Qué le dirías?
 
-> R:
+> R:Hacer un solo commit al final del día genera commits grandes y difíciles de entender. Si algo anda mal, cuesta mucho encontrar qué cambio lo causó. También dificulta revisar el trabajo y resolver conflictos, porque mezcla muchas cosas distintas. Le aconsejaria que debe hacer commits pequeños, frecuentes y con un mensaje claro, porque eso facilita el seguimiento del progreso, la revisión y el debug.
 
 **P4** — ¿Cuál es la diferencia entre `git fetch` y `git pull`? ¿Cuándo preferirías usar uno sobre el otro?
 
-> R:
+> R:git fetch descarga los cambios del servidor, pero no los mezcla con tu rama; solo actualiza las referencias remotas. git pull hace dos cosas: fetch + merge/rebase, es decir, descarga y automáticamente intenta integrar los cambios en tu rama local. Prefiero usar git fetch cuando quiero ver qué cambió antes de mezclarlo, para revisar commits o evitar conflictos inesperados. Uso git pull cuando confío en que puedo integrar los cambios sin problema.
 
 **P5** — ¿Qué información debería tener la descripción de un Pull Request para que sea útil para quien lo revisa?
 
-> R:
+> R:Un pull Request deberia incluir un resumen claro de que cambia y porque, el contexto del problema que resuelve, detalle de los archivos o funcionalidades afectadas, pasos para probar si hace falta, cualuqier desicion o duda tecnica relevante. Esto ayuda a que quien lo revisa entienda rapido el proposito y pueda aprobarlo con confianza.
 
 ---
 
