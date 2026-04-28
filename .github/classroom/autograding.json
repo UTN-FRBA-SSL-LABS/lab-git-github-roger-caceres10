@@ -12,7 +12,9 @@
       "setup": "",
       "run": "! grep -q 'TODO' operaciones.c",
       "input": "", "output": "", "comparison": "included",
+
       "timeout": 5, "points": 4
+
     },
     {
       "name": "C3. multiplicar devuelve resultado correcto",
@@ -20,6 +22,7 @@
       "run": "./calculadora | grep -q '3 \\* 5    = 15'",
       "input": "", "output": "", "comparison": "included",
       "timeout": 5, "points": 8
+
     },
     {
       "name": "C4. Commit wip: experimento roto existe",
@@ -27,6 +30,7 @@
       "run": "git log --all --format='%s' | grep -qF 'wip: experimento roto'",
       "input": "", "output": "", "comparison": "included",
       "timeout": 5, "points": 8
+
     },
     {
       "name": "C5. Revert del experimento existe",
@@ -41,6 +45,7 @@
       "run": "! grep -qE '^(<<<<<<<|=======|>>>>>>>)' operaciones.c",
       "input": "", "output": "", "comparison": "included",
       "timeout": 5, "points": 8
+
     },
     {
       "name": "C7. esPar funciona correctamente",
@@ -48,6 +53,7 @@
       "run": "./calculadora | grep -q '4 es par = 1' && ./calculadora | grep -q '7 es par = 0'",
       "input": "", "output": "", "comparison": "included",
       "timeout": 5, "points": 8
+
     },
     {
       "name": "C8. Ningun mensaje de commit vacio o muy corto",
@@ -55,6 +61,7 @@
       "run": "! git log --format='%s' | grep -qE '^.{0,4}$'",
       "input": "", "output": "", "comparison": "included",
       "timeout": 5, "points": 4
+
     },
     {
       "name": "C9. Branch feature/mi-funcion fue creada",

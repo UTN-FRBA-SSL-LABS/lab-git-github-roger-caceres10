@@ -170,7 +170,6 @@ jobs:
         id: c21
         continue-on-error: true
         run: grep -q 'RESPUESTA_P7=c' readme.md
-
       # ── Puntaje final ──────────────────────────────────────────────
 
       - name: Calcular puntaje
